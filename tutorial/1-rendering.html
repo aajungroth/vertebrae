@@ -103,7 +103,7 @@ var Message = Backbone.Model.extend({
      */
     this.on('change', function(e) {
       console.log(e);
-      renderSomethingOnThePage(e.changed.message);
+      renderSomethingOnThePage(e.get('message'));
     });
     /* It is your turn to write the event handler.
      *
